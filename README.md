@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chef.IA
 
-## Getting Started
+Chef.IA é uma Progressive Web App (PWA) desenvolvida para auxiliar usuários no gerenciamento de receitas culinárias utilizando Inteligência Artificial.
 
-First, run the development server:
+O projeto serve simultaneamente como uma aplicação de uso pessoal e como um projeto de estudo sobre desenvolvimento **AI-first**, aplicando princípios de Arquitetura de Software, Clean Architecture, testes automatizados e boas práticas de engenharia de software.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Objetivos
+
+- Gerar receitas utilizando IA.
+- Organizar receitas em um livro digital.
+- Permitir edição manual e assistida por IA.
+- Manter um chat contextual para cada receita.
+- Personalizar receitas com base em ingredientes disponíveis e preferências alimentares.
+
+---
+
+## Tecnologias
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- TypeORM
+- PostgreSQL (futuro)
+- IndexedDB (MVP)
+- Zod
+- pnpm
+
+---
+
+## Arquitetura
+
+O projeto segue uma arquitetura em camadas:
+
+```
+UI
+    ↓
+Application
+    ↓
+Domain
+    ↓
+Infrastructure
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Toda a documentação da arquitetura está disponível na pasta `docs/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estrutura da Documentação
 
-## Learn More
+```
+docs/
 
-To learn more about Next.js, take a look at the following resources:
+architecture/
+backend/
+decisions/
+domain/
+features/
+product/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A documentação representa a fonte de verdade do projeto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Antes de implementar qualquer funcionalidade, consulte os documentos relevantes.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Desenvolvimento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Instalar dependências:
+
+```bash
+pnpm install
+```
+
+Executar em modo de desenvolvimento:
+
+```bash
+pnpm dev
+```
+
+Executar lint:
+
+```bash
+pnpm lint
+```
+
+Executar testes:
+
+```bash
+pnpm test
+```
+
+> Os testes ainda serão implementados.
+
+---
+
+## Filosofia do Projeto
+
+Este projeto utiliza Inteligência Artificial como ferramenta de desenvolvimento, porém todas as decisões arquiteturais permanecem sob controle do desenvolvedor.
+
+A IA deve:
+
+- respeitar toda a documentação presente em `docs/`;
+- seguir os ADRs definidos;
+- reutilizar código existente;
+- evitar duplicação;
+- não instalar dependências sem autorização;
+- não alterar a arquitetura automaticamente.
+
+---
+
+## Roadmap
+
+### MVP
+
+- [ ] Gerar receitas com IA
+- [ ] Livro de receitas
+- [ ] Edição manual
+- [ ] Modificação por IA
+- [ ] Chat contextual por receita
+- [ ] Preferências alimentares
+- [ ] Minha Geladeira
+- [ ] Persistência local
+- [ ] PWA
+
+### Futuro
+
+- [ ] Autenticação
+- [ ] Sincronização em nuvem
+- [ ] PostgreSQL
+- [ ] Compartilhamento de receitas
+- [ ] Lista de compras
+- [ ] Imagens das receitas
+- [ ] Informações nutricionais
+
+---
+
+## Licença
+
+Este projeto está sendo desenvolvido para fins de estudo e uso pessoal.
