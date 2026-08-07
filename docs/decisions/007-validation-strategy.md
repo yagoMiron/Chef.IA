@@ -30,6 +30,10 @@ Dados inválidos nunca deverão alcançar a camada de domínio.
 
 Respostas produzidas pela IA deverão ser validadas antes de qualquer processamento.
 
+Schemas Zod validam dados de entrada.
+
+Regras de negócio pertencem ao domínio e não devem ser substituídas por validações Zod.
+
 ---
 
 ## Objetivos

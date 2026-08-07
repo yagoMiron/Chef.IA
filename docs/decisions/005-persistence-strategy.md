@@ -41,3 +41,21 @@ Nenhum Use Case poderá acessar diretamente IndexedDB.
 A implementação inicial exige maior abstração.
 
 Entretanto, futuras migrações de banco tornam-se significativamente mais simples.
+
+---
+
+## Repository Location
+
+As interfaces dos repositories pertencem à camada de domínio ou aplicação.
+
+As implementações concretas pertencem à infraestrutura.
+
+Exemplo:
+
+domain/
+repositories/
+RecipeRepository.ts
+
+infrastructure/
+repositories/
+IndexedDBRecipeRepository.ts

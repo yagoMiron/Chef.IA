@@ -2,29 +2,24 @@
 
 ## Título
 
-Utilizar TypeORM
-
-## Status
-
-Aceito
+Utilizar TypeORM para persistência server-side futura
 
 ## Contexto
 
-Será necessário persistir dados em um backend futuramente.
+O MVP utiliza IndexedDB através de repositories.
+
+Quando a aplicação possuir backend remoto e persistência server-side, será necessário utilizar um ORM.
 
 ## Decisão
 
-Utilizar TypeORM.
+TypeORM será utilizado como ORM quando existir persistência server-side.
+
+No MVP o TypeORM não será instalado.
 
 Prisma não será utilizado.
 
 ## Motivos
 
-- maior familiaridade da equipe
-- preferência arquitetural
-- menor dependência de geração de código
-
-## Alternativas
-
-- Prisma
-- Drizzle
+- maior familiaridade da equipe;
+- preferência arquitetural;
+- menor dependência de geração automática de código.

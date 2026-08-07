@@ -2,7 +2,7 @@
 
 ## Título
 
-Cobertura total de testes
+Estratégia de testes automatizados
 
 ## Status
 
@@ -10,9 +10,11 @@ Aceito
 
 ## Decisão
 
-Todo bug corrigido gera um teste.
+Toda regra de negócio deve possuir testes automatizados.
 
-Toda funcionalidade gera testes.
+Todo bug corrigido deve gerar um teste de regressão quando aplicável.
+
+Novas funcionalidades devem possuir testes cobrindo seus comportamentos esperados.
 
 ## Motivos
 

@@ -79,3 +79,11 @@ Refatorações estruturais devem ser propostas antes da implementação.
 A velocidade de desenvolvimento pode ser ligeiramente reduzida.
 
 Em compensação, o projeto permanece consistente, previsível e facilmente mantido.
+
+---
+
+### Código existente
+
+Antes de criar uma nova implementação, a IA deve analisar código existente relacionado.
+
+A IA deve preferir modificar uma implementação existente ao invés de criar uma nova.
